@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			min-height: 100%;
+			font-size: 62.5%;
+		}
+		#page2, #page3 {
+			display: block;
+		}
+		section {
+			text-align: center;
+		}
+		h1 {
+			font-size: 1.6em;
+		}
+		button {
+			padding: 0.8em 1em;
+			background: black;
+			color: white;
+			font-size: 1.2em;
+		}
+		#map {
+			height: 60em;
+			width: 60em;
+			left: 50%;
+			margin-left: -30em;
+		}
+		p {
+			padding: 0.8em;
+			font-size: 1.4em;
+		}
+		</style>
+	</head>
+	<body>
+		<section id="page1">
+			<button id="getGeoloc">Find me</button>
+		</section>
+		<section id="page2">
+			<p id="resultGeoloc"></p>
+			<div id="mapZone">
+				<div id="map">
+				</div>
+			</div>
+		</section>
+		<section id="page3">
+			<p id="searchBetween"></p>
+		</section>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3DUE_kYK3jknUc4QumEpqYrCtDVIf7kI"></script>
+		<script src="app.js"></script>
+		<script>
+		'use strict';
+
+		var test = new App();
+		</script>
+	</body>
+</html>
